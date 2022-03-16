@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/js/bootstrap.js"></script>
+    <script src="Code.js"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>JavaScript</title>
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-12" style="border: 1px solid #0d6efd;border-radius: 10px;padding: 15px;">
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;justify-content:center;">
+                    <p>Реализовать возможность переноса значения в пустое поле ввода при нажатии на кнопку!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;flex-direction:row;">
+                    <input type="text" class="form-control" id="input0" placeholder="Здесь могла бы быть ВАША реклама!)" value="10.100" style="margin-right: 15px;">
+                    <button type="button" id="button1" class="btn btn-outline-primary">Копировать</button>
+                    <input type="text" class="form-control" id="input1" placeholder="Здесь могла бы быть ВАША реклама!)" value="" style="margin-left: 15px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-12" style="border: 1px solid #0d6efd;border-radius: 10px;padding: 15px;">
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;justify-content:center;">
+                    <p>Реализовать возможность вывода в сплывающем окне содержимое двух полеей ввода!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;flex-direction:row;">
+                    <input type="text" class="form-control" id="input2" placeholder="Здесь могла бы быть ВАША реклама!)" value="Сегодня " style="margin-right: 15px;">
+                    <button type="button" id="button2" class="btn btn-outline-primary">Показать</button>
+                    <input type="text" class="form-control" id="input3" placeholder="Здесь могла бы быть ВАША реклама!)" value=" Среда" style="margin-left: 15px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-12" style="border: 1px solid #0d6efd;border-radius: 10px;padding: 15px;">
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;justify-content:center;">
+                    <p>Реализовать возможность отчистить поля ввода при нажатии кнопки!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;flex-direction:row;">
+                    <input type="text" class="form-control" id="input4" placeholder="Здесь могла бы быть ВАША реклама!)" value="Я спал я ел я сел" style="margin-right: 15px;">
+                    <button type="button" id="button3" class="btn btn-outline-primary">Сброс</button>
+                    <input type="text" class="form-control" id="input5" placeholder="Здесь могла бы быть ВАША реклама!)" value="И встал услат пропал.." style="margin-left: 15px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-12" style="border: 1px solid #0d6efd;border-radius: 10px;padding: 15px;">
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;justify-content:center;">
+                    <p>Реализовать возможность вывода суммы значений в консоль браузера!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;flex-direction:row;">
+                    <input type="text" class="form-control" id="input6" placeholder="Здесь могла бы быть ВАША реклама!)" value="213" style="margin-right: 15px;">
+                    <button type="button" id="button4" class="btn btn-outline-primary">Сложить</button>
+                    <input type="text" class="form-control" id="finput7" placeholder="Здесь могла бы быть ВАША реклама!)" value="481" style="margin-left: 15px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-12" id="testBlock1" style="border: 1px solid #0d6efd;border-radius: 10px;padding: 15px;height:110px;">
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;justify-content:center;">
+                    <p>Реализовать возможность покраски содержимого текущего блока при нажатии на кнопку! (в любой цвет)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;flex-direction:row;justify-content:center;">
+                    <button type="button" id="fff" class="btn ttt btn-outline-primary">Покрасить</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-12" style="border: 1px solid #0d6efd;border-radius: 10px;padding: 15px;">
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;justify-content:center;">
+                    <p>Реализовать возможность вывода наименования и версии браузера пользователя в поле ввода!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;flex-direction:row;">
+                    <input type="text" class="form-control" id="input8" placeholder="Здесь могла бы быть ВАША реклама!)" value="" style="margin-right: 15px;">
+                    <button type="button" id="button5"  class="btn btn-outline-primary">Показать!</button>
+                    <input type="text" class="form-control" id="finput9" placeholder="Здесь могла бы быть ВАША реклама!)" value="481" style="margin-left: 15px;visibility: hidden;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="padding: 10px;">
+        <div class="col-lg-12" style="border: 1px solid #0d6efd;border-radius: 10px;padding: 15px;">
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;justify-content:center;">
+                    <p>Реализовать возможность вывода текущего времени в поле ввода при нажатии на кнопку!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex;flex-direction:row;">
+                    <input type="text" class="form-control" id="input10" placeholder="Здесь могла бы быть ВАША реклама!)" value="" style="margin-right: 15px;">
+                    <button type="button" id="button6"  class="btn btn-outline-primary">Показать!</button>
+                    <input type="text" class="form-control" id="finput11" placeholder="Здесь могла бы быть ВАША реклама!)" value="481" style="margin-left: 15px;visibility: hidden;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
